@@ -1,0 +1,92 @@
+.Institute-container{
+    max-width: 1140px;
+   /* max-width: 1000px;*/
+   /* margin: 0px 100px;*/
+   padding-top: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 200px;
+    /*padding: 1.2rem 1rem;*/
+    padding-bottom: 5rem;
+}
+
+.Institute-card{
+   /* background: red;
+    padding: 0.8rem 0.8rem;
+    border-radius: 30px;*/
+    /*1st width
+    width: 150px*/
+    /*Changed width and height*/
+    width: 220px; 
+    height: auto;
+   /* write these to decrease the skill card size
+   width: 120px;
+    height: auto;*/
+   /* overflow: hidden;*/
+    box-shadow: 0px 0px 15px -5px;
+    border-radius: 20px;
+    background-color: rgba(106, 112, 112, 0.61);
+}
+
+.instituteimage-container img{
+   /* overflow: hidden;*/
+    border-radius: 20px;
+    width: 220px;
+    height: 140px; 
+    margin: auto;
+    padding: 10px;/*This is padding*/
+  /* write these to decrease the skill card size
+    width: 120px;
+    height: 90px;*/
+}
+
+/*Right from here,remove the down 3 components to decrease the skill card size*/
+.card-content{
+    margin: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.card-title{
+    padding-bottom: 10px ;
+    margin-bottom: 0.5rem;
+}
+
+.card-class{
+    margin-bottom: 1rem;
+}
+
+.card-grade{
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1024px){
+    .Institute-container{
+        /*max-width: 1000px;
+        margin: 0px 100px;
+        padding: 1.2rem 1rem;
+        grid-template-columns: 1fr;*/
+        max-width: 210px;
+        margin: auto;
+        padding: 5.2rem 1rem;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 80px;
+    }
+    
+    .Institute-card{
+         width: 180px; 
+       /* width: auto; */
+        height: auto;
+        
+    }
+
+    .instituteimage-container img{
+        overflow: hidden;
+        /*height: 120px; */
+        /*width: 220px;*/
+        width: 180px;
+        height: 130px;   
+        
+    }
+}
